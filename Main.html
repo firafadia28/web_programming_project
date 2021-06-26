@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQuery -->
+    <script src="Jquery/jquery-3.4.1.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Impian Kos - Cari Kos dan Booking Sekarang!</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--custom Style-->
+    <link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet">
+    <link href="plugin-frameworks/swiper.css" rel="stylesheet">	
+    <link href="fonts/ionicons.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Navbar Start -->
+    <div > <!-- ---------------------------------- -->
+      <div class="d-flex flex-column flex-md-row align-items-center p-0 px-md-4 mb-0">
+          <div class="my-0 mr-md-auto font-weight-normal">
+            <div id="mySidenav" class="sidenav">
+                <div class="col-5">              
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                  <a href="#" class="content_sidemenu">Beranda</a> 
+                  <a href="#" class="content_sidemenu" >Pemesanan</a>
+                </div>
+                <div style="padding-left:20px;padding-right:20px" >
+                  <hr>
+                </div>
+                <div class="col-5"> 
+                  <a href="#" class="content_sidemenu">Promo</a>
+                  <a href="#" class="content_sidemenu">Bantuan</a>
+                  <a href="#" class="content_sidemenu">Kontak</a>
+                </div> 
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a href="Main.html"><img src="image/logo-IMK.png" alt="" height="50px" width="50px"></a> 
+          </div>
+          <div>
+            <ul class="nav nav-tabs justify-content-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Promo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Tersimpan</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+              </li>    
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Masuk</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#penyewa">Peyewa</a>
+                      <a class="dropdown-item" href="#pemilik">Pemilik</a>
+                  </div>
+              </li>
+            </ul>
+          </div>  
+      </div>
+    </div> 
+    <!-- Navbar End -->
+
+    <div onclick="closeNav()">
+
+    <!-- Slider Start -->
+    <nav class="nav">
+        <div class="col">
+            <div class="carousel-item active">
+              <img src="image/slider.1.jpg" class=" w-100" alt="..." style="border-radius: 10px;">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="text-light">
+                  <h2 class="display-2 font-weight-lighter">Impian Kos</h2>
+                  <p>Mulai Pencarian dan Pesan Dari Sekarang</p> 
+                </div>
+                <div>
+                  <form class="my-2 my-lg-0">
+                      <div class="form-group mb-2">
+                        <input class="form-control mr-sm-2 " type="search" placeholder="Cari nama kos / daerah" aria-label="Search">
+                      </div>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Pencarian</button>
+                  </form>
+                </div>
+                  
+              </div>
+            </div>
+        </div> 
+    </nav>
+    <!-- Slider End -->
+
+
+
+    <!-- Middle Content Start -->
+    <div class="container" style="align-content: center; text-align: center">
+          <h3 style="text-align: center; padding-top: 20px;">Khusus Untuk Member Impian Kos</h3>
+          <div class="text-muted">
+            <p><a href="#Masuk">Masuk</a> atau <a href="#registrasi">Registrasi</a></p>
+          </div>
+      </div>
+    <div class="row" style="text-align: center">
+      <div class="col">
+          <img src="image/caution.png" alt="" style="width: 100px; height: 100px">
+          <h5>Laporan Pelanggaran</h5>
+      </div>
+      <div class="col">
+          <img src="image/discount.png" alt="" style="width: 100px; height: 100px">
+          <h5>Kartu Diskon</h5>
+      </div>
+      <div class="col">
+          <img src="image/saved-list.png" alt="" style="width: 100px; height: 100px">
+          <h5>Daftar Simpanan</h5>
+      </div>
+      <div class="col">
+          <img src="image/riwayat.png" alt="" style="width: 100px; height: 100px">
+          <h5>Riwayat Transaksi</h5>
+      </div>
+    </div>
+    <!-- Middle Content End -->
+
+
+
+    <!--Ending Content Start -->
+        <div class="container" style="padding-top: 30px;">
+          <div class="text-muted col">
+            <h4>Rekomendasi Kos</h4>
+          </div>
+          <div class="container" style="padding-top: 10px;">
+              <div class="card-deck mb-3 text-left">
+                <div class="card mb-4 shadow-sm">
+                  <div>
+                    <img src="image/kamar1.jpg" alt="" class="d-block w-100" height="250px">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">IDR. 200.000 <small class="text-muted">/ Bulan</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4 text-muted">
+                        <li><b class="jenis-kos">Putra</b> - Bantul</li>
+                        <li type="bullet">Kost Putra Bangsa</li>
+                        <li type="bullet">Wifi, Perlengkapan Tidur, Kamar Mandi...</li>
+                        <li type="bullet"><img src="image/small-centang.png" alt="" style="width: 10px"><small> - Upload 2 minggu yang lalu</small></li>
+                      </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Telusuri</button>
+                  </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div>
+                        <img src="image/kamar2.jpg" alt="" class="d-block w-100" height="250px">
+                    </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">IDR. 250.000 <small class="text-muted">/ Bulan</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4 text-muted">
+                      <li><b class="jenis-kos">Campur</b> - Kota Yogyakarta</li>
+                      <li type="bullet">Losmen Bikin Enak</li>
+                      <li type="bullet">Wifi, Perlengkapan Tidur, Kamar Mandi...</li>
+                      <li type="bullet"><img src="image/small-centang.png" alt="" style="width: 10px"><small> - Upload 2 minggu yang lalu</small></li>
+                    </ul>
+                    <div class="row align-items-end">
+                      <div class="col">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Telusuri</button>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                    <div>
+                        <img src="image/kamar3.jpg" alt="" class="d-block w-100" height="250px">
+                    </div>
+                  <div class="card-body"> 
+                    <h2 class="card-title pricing-card-title">IDR. 350.000 <small class="text-muted">/ Bulan</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4 text-muted">
+                        <li><b class="jenis-kos">Perempuan</b> - Sleman</li>
+                        <li type="bullet">Kost Puri Asih</li>
+                        <li type="bullet">Wifi, Perlengkapan Tidur, Kamar Mandi...</li>
+                        <li type="bullet"><img src="image/small-centang.png" alt="" style="width: 10px"><small> - Upload 2 minggu yang lalu</small></li>
+                      </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Telusuri</button>
+                  </div>
+                </div>
+              </div>            
+        </div>
+        <hr>
+      </div>
+    <!--Ending Content End -->
+
+
+
+    <!-- Middle Footer Start -->
+      <Div class="container">
+        <div class="row text-center"><H3>Kenapa Harus Memilih Impian Kos?</H3></div>
+        <div class="row justify-content-start">
+            <div class="col-2,5">
+               <img src="image/love-icon.png" alt="" class="d-block" width="200px">
+            </div>
+            <div class="col-6" style="padding-top:50px">
+              <h5>Harga Sesuai Hati</h5>
+              <p class="text-justify">Dengan menggunakan Impian Kos anda dapat memilih harga dan tempat sesuai dengan yang anda butuhkan.</p>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-6 text-right ">
+              <h5>Kemudahan Bertransaksi</h5>
+              <p class="text-justify">Anda tidak perlu datang ke Tempat penyewaan, akan tetapi anda bisa melakukan transaksi langsung melalu Impian Kos sehingga memudahkan anda dalam melakukan pemesanan dan pembayaran.</p>
+            </div>
+            <div class="col-3">
+                <img src="image/transaction-icon.png" alt="" class="d-block" width="250px" height="">
+            </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-2,5">
+             <img src="image/discount.png" alt="" class="d-block" width="200px">
+          </div>
+          <div class="col-6" style="padding-top:50px">
+            <h5>Diskon Terbaik</h5>
+            <p class="text-justify">Kerja sama yang kami jalin dengan pemilik kos dapat memuculkan potongan harga yang tebaik</p>
+          </div>
+        </div>
+        <div class="row justify-content-end" style="padding-bottom: 50px;">
+          <div class="col-6 text-right" style="padding-top: 30px;">
+            <h5>Kemudahan Bertransaksi</h5>
+            <p class="text-justify">Anda tidak perlu datang ke Tempat penyewaan, akan tetapi anda bisa melakukan transaksi langsung melalu Impian Kos sehingga memudahkan anda dalam melakukan pemesanan dan pembayaran.</p>
+          </div>
+          <div class="col-3">
+              <img src="image/security-icon.png" alt="" class="d-block" width="200px" height="">
+          </div>
+        </div>
+      </Div>        
+    <!-- Middle Footer End-->
+
+
+    
+    <!-- Ending Footer Start-->
+<!-- Footer -->
+<footer class="footer font-small" style="padding-top: 50px; background-color: #00270d; color: white">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <div class="col-5 text-center text-white" >
+            
+            <b class="custom-display-4"></b> 
+          </div>
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col mx-auto">
+            <div class="row justify-content-start">
+                <div class="col-3 text-center text-white">
+                 <a href="Main.html"><img class="w-100" src="image/icon-logo.png" alt=""></a>                 
+                </div>
+                <div class="col-8">
+                  <b class="custom-display-4">Impian Kos</b>
+                  <p style="text-align: justify">Merupakan perusahaan yang menyediakan jasa tawar menawar kos area Yogyakarta,
+                    dengan menggunakan jasa kami, anda akan mendapat banyak keuntungan baik dari pemilik kos maupun dari penawar dan
+                    tidak luput diskon yang kami berikan.</p>
+                </div>
+            </div>
+          <!-- Content --> 
+        <div>
+           
+        </div>        
+          
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Beranda</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Promo</a>
+            </li>
+            <li>
+              <a href="#!">Bantuan</a>
+            </li>
+            <li>
+              <a href="#!">Komentar</a>
+            </li>
+            <li>
+              <a href="#!">Laporkan</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  <hr>
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">       
+        <a href="#"> <img src="image/fb-icon.png" alt="" width="40px"></a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="#"> <img src="image/twitter-icon.png" alt="" width="40px">
+      </li>
+
+      <li class="list-inline-item">
+        <a href="#"><img src="image/gplus-icon.png" alt="" width="40px">
+      </li>
+      <li class="list-inline-item">
+        <a href="#"><img src="image/linked-icon.png" alt="" width="45px">
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script> All rights reserved | This Slide is made with <i class="ion-heart" aria-hidden="true"></i> by Abiyoga Hendra Wijaya</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+</div>
+  
+    <!-- custom Javascript-->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+    document.getElementById("main").style.marginLeft = "20%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="Jquery/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

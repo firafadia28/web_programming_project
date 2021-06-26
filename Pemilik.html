@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Charset -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- JQuery -->
+  <script src="Jquery/jquery-3.4.1.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Title -->
+  <title>Pemilik</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pemilik.css">
+</head>
+<body>
+  <!-- Nav 1 -->
+  <div > <!-- ---------------------------------- -->
+    <div class="d-flex flex-column flex-md-row align-items-center p-0 px-md-4 mb-0">
+        <div class="my-0 mr-md-auto font-weight-normal">
+          <div id="mySidenav" class="sidenav">
+              <div class="col-5">              
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                <a href="#" class="content_sidemenu">Beranda</a> 
+                <a href="#" class="content_sidemenu" >Pemesanan</a>
+              </div>
+              <div style="padding-left:20px;padding-right:20px" >
+                <hr>
+              </div>
+              <div class="col-5"> 
+                <a href="#" class="content_sidemenu">Promo</a>
+                <a href="#" class="content_sidemenu">Bantuan</a>
+                <a href="#" class="content_sidemenu">Kontak</a>
+              </div> 
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <a href="Main.html"><img src="image/logo-IMK.png" alt="" height="50px" width="50px"></a> 
+        </div>
+        <div>
+          <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tersimpan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>    
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">(Nama)</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Profile.html">Profil</a>
+                    <a class="dropdown-item" href="Main.html">Keluar</a>
+                    <a class="dropdown-item" href="Pemilik.html">Data</a>
+                </div>
+            </li>
+          </ul>
+        </div>  
+    </div>
+  </div> 
+  <!--END NAV 1--> 
+  
+  <div onclick="closeNav()">
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <form class="form-inline">
+            <input class="form-control form-control-sm mr-0 w-75" type="text" placeholder="Search"
+              aria-label="Search" id="myInput" onkeyup="myFunction()">
+            <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <table id="datakamar" class="table table-striped table-bordered table-sm table-hover" cellspacing="0" width="100%">
+        <thead>
+          <tr>
+            <th class="th-sm" onclick="sortTable(0)">Nomor Kamar</th>
+            <th class="th-sm" onclick="sortTable(1)">Nama</th>
+            <th class="th-sm" onclick="sortTable(2)">Harga Kamar</th>
+            <th class="th-sm" onclick="sortTable(3)">Lama Pembayaran</th>
+            <th class="th-sm" onclick="sortTable(4)">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.1</td>
+            <td>Magfira Dilaila Fadia</td>
+            <td>650000</td>
+            <td>6 bulan</td>
+            <td>3900000</td>
+          </tr>
+
+          <tr>
+            <td>1.2</td>
+            <td>Rizki Nuraini Ramadhani</td>
+            <td>600000</td>
+            <td>12 bulan</td>
+            <td>7200000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer font-small" style="padding-top: 50px; background-color: #00270d; color: white">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <div class="col-5 text-center text-white" >
+            
+            <b class="custom-display-4"></b> 
+          </div>
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col mx-auto">
+            <div class="row justify-content-start">
+                <div class="col-3 text-center text-white">
+                 <a href="Main.html"><img class="w-100" src="image/icon-logo.png" alt=""></a>                 
+                </div>
+                <div class="col-8">
+                  <b class="custom-display-4">Impian Kos</b>
+                  <p style="text-align: justify">Merupakan perusahaan yang menyediakan jasa tawar menawar kos area Yogyakarta,
+                    dengan menggunakan jasa kami, anda akan mendapat banyak keuntungan baik dari pemilik kos maupun dari penawar dan
+                    tidak luput diskon yang kami berikan.</p>
+                </div>
+            </div>
+          <!-- Content --> 
+        <div>
+           
+        </div>        
+          
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Beranda</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Promo</a>
+            </li>
+            <li>
+              <a href="#!">Bantuan</a>
+            </li>
+            <li>
+              <a href="#!">Komentar</a>
+            </li>
+            <li>
+              <a href="#!">Laporkan</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  <hr>
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">       
+        <a href="#"> <img src="image/fb-icon.png" alt="" width="40px"></a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="#"> <img src="image/twitter-icon.png" alt="" width="40px">
+      </li>
+
+      <li class="list-inline-item">
+        <a href="#"><img src="image/gplus-icon.png" alt="" width="40px">
+      </li>
+      <li class="list-inline-item">
+        <a href="#"><img src="image/linked-icon.png" alt="" width="45px">
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script> All rights reserved | This Slide is made with <i class="ion-heart" aria-hidden="true"></i> by Kelompok 2</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  </div>
+
+<!-- custom Javascript-->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "15%";
+      document.getElementById("main").style.marginLeft = "20%";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+    function myFunction() {
+    // Declare variables 
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("datakamar");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+
+    function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("datakamar");
+    switching = true;
+    // Set the sorting direction to ascending:
+    dir = "asc"; 
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+  </script>
+  <!-- Optional JavaScript -->
+  <script type="text/javascript" src="Jquery/script.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- OTHER -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</body>
+</html>

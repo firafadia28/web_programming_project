@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Charset -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- JQuery -->
+  <script src="Jquery/jquery-3.4.1.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Title -->
+  <title>Profil</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Nav 1 -->
+    <div > <!-- ---------------------------------- -->
+        <div class="d-flex flex-column flex-md-row align-items-center p-0 px-md-4 mb-0">
+            <div class="my-0 mr-md-auto font-weight-normal">
+                <div id="mySidenav" class="sidenav">
+                    <div class="col-5">              
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                        <a href="#" class="content_sidemenu">Beranda</a> 
+                        <a href="#" class="content_sidemenu" >Pemesanan</a>
+                    </div>
+                    <div style="padding-left:20px;padding-right:20px" >
+                <hr>
+                </div>
+
+                <div class="col-5"> 
+                    <a href="#" class="content_sidemenu">Promo</a>
+                    <a href="#" class="content_sidemenu">Bantuan</a>
+                    <a href="#" class="content_sidemenu">Kontak</a>
+                </div> 
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <a href="Main.html"><img src="image/logo-IMK.png" alt="" height="50px" width="50px"></a> 
+        </div>
+        <div>
+          <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tersimpan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>    
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">(Nama)</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Profile.html">Profil</a>
+                    <a class="dropdown-item" href="Main.html">Keluar</a>
+                    <a class="dropdown-item" href="Pemilik.html">Data</a>
+                </div>
+            </li>
+          </ul>
+        </div>  
+    </div>
+  </div> 
+  <!--END NAV 1--> 
+  
+  <div onclick="closeNav()">
+
+    <div class="container">
+      	<div class="row">
+            <div class="col-md-3 ">
+                 <div class="list-group ">
+                      <div align="center">
+                        <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="rounded-circle"> <br>
+                        <br>
+                        <input id="profile-image-upload" type="file">
+                      </div>
+                  </div> 
+            </div>
+
+            <div class="prof">
+              <ul class="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="dashboard-tab-md" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard"
+                      aria-selected="true">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="settings-tab-md" data-toggle="tab" href="#settings" role="tab" aria-controls="settings"
+                      aria-selected="false">Settings</a>
+                  </li>
+                </ul>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card" style="width: 50rem; height: 32rem;">
+                      <div class="card-body" style="padding: 20px;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-content card" id="myTabContentMD" style="padding: 20px;">
+                                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard">
+                                        <form id="tab">
+                                            <div class="form-group row">
+                                                <label for="username" class="col-4 col-form-label">Username</label> 
+                                                <div class="col-8">
+                                                  <input id="username" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+                                                </div>
+                                            </div>
+              
+                                            <div class="form-group row">
+                                                <label for="email" class="col-4 col-form-label">Email</label> 
+                                                <div class="col-8">
+                                                  <input id="email" name="email" placeholder="Email" required="required" class="form-control here" type="text">
+                                                </div>
+                                            </div>
+    
+                                            <div class="form-group row">
+                                                <label for="name" class="col-4 col-form-label">Nama Depan</label> 
+                                                <div class="col-8">
+                                                  <input id="name" name="name" placeholder="Nama Depan" class="form-control here" type="text">
+                                                </div>
+                                            </div>
+    
+                                            <div class="form-group row">
+                                                <label for="lastname" class="col-4 col-form-label">Nama Belakang</label> 
+                                                <div class="col-8">
+                                                  <input id="lastname" name="lastname" placeholder="Nama Belakang" class="form-control here" type="text">
+                                                </div>
+                                            </div>
+    
+                                            <div class="form-group row">
+                                                <label for="address" class="col-4 col-form-label">Alamat</label> 
+                                                <div class="col-8">
+                                                  <textarea rows="3" class="form-control here"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                              <label for="handphone" class="col-4 col-form-label">Nomor Telepon</label> 
+                                              <div class="col-8">
+                                                <input id="handphone" name="hape" placeholder="No.HP" class="form-control here" type="tel">
+                                              </div>
+                                          </div>
+    
+                                            <div class="form-group row">
+                                                <div class="offset-4 col-8">
+                                                  <button name="submit" type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                      </div>
+                                    <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="oldpw" class="col-4 col-form-label">Masukkan Password Lama: </label> 
+                                                <div class="col-8">
+                                                  <input id="oldpw" name="oldPW" placeholder="Password Lama" class="form-control here" type="password">
+                                                </div>
+                                            </div>
+    
+                                            <div class="form-group row">
+                                                <label for="newpw" class="col-4 col-form-label">Masukkan Password Baru: </label> 
+                                                <div class="col-8">
+                                                  <input id="newpw" name="newPW" placeholder="Password Baru" class="form-control here" type="password">
+                                                </div>
+                                            </div>
+    
+                                            <div class="form-group row">
+                                                <div class="offset-4 col-8">
+                                                  <button name="submit" type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+            
+            
+              
+               
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer font-small" style="padding-top: 50px; background-color: #00270d; color: white">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class="col-5 text-center text-white" >
+                
+                <b class="custom-display-4"></b> 
+              </div>
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col mx-auto">
+                <div class="row justify-content-start">
+                    <div class="col-3 text-center text-white">
+                     <a href="Main.html"><img class="w-100" src="image/icon-logo.png" alt=""></a>                 
+                    </div>
+                    <div class="col-8">
+                      <b class="custom-display-4">Impian Kos</b>
+                      <p style="text-align: justify">Merupakan perusahaan yang menyediakan jasa tawar menawar kos area Yogyakarta,
+                        dengan menggunakan jasa kami, anda akan mendapat banyak keuntungan baik dari pemilik kos maupun dari penawar dan
+                        tidak luput diskon yang kami berikan.</p>
+                    </div>
+                </div>
+              <!-- Content --> 
+            <div>
+               
+            </div>        
+              
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Beranda</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Promo</a>
+                </li>
+                <li>
+                  <a href="#!">Bantuan</a>
+                </li>
+                <li>
+                  <a href="#!">Komentar</a>
+                </li>
+                <li>
+                  <a href="#!">Laporkan</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      <hr>
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">       
+            <a href="#"> <img src="image/fb-icon.png" alt="" width="40px"></a>
+          </li>
+    
+          <li class="list-inline-item">
+            <a href="#"> <img src="image/twitter-icon.png" alt="" width="40px">
+          </li>
+    
+          <li class="list-inline-item">
+            <a href="#"><img src="image/gplus-icon.png" alt="" width="40px">
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><img src="image/linked-icon.png" alt="" width="45px">
+          </li>
+        </ul>
+        <!-- Social buttons -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved | This Slide is made with <i class="ion-heart" aria-hidden="true"></i> by Kelompok 2</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    
+      </div>
+    
+    <!-- custom Javascript-->
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "15%";
+          document.getElementById("main").style.marginLeft = "20%";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+      <!-- Optional JavaScript -->
+      <script type="text/javascript" src="Jquery/script.js"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+</body>
+</html>
